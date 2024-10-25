@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import UnitSection from "@/components/UnitSection";
+import Gallery from "@/components/Gallery";
 
 const Index = () => {
   const oneBedroom = {
@@ -53,6 +54,7 @@ const Index = () => {
         <UnitSection {...oneBedroom} />
         <UnitSection {...singleUnit} reversed />
       </div>
+      <Gallery />
     </main>
   );
 };
