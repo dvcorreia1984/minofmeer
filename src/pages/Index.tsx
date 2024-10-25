@@ -19,10 +19,10 @@ const Index = () => {
       "Kontemporêre styl",
     ],
     specs: {
-      size: "31.5 m²",
-      bedrooms: "1",
-      bathroom: "Volledig",
-      kitchen: "Mini-kombuis",
+      grootte: "31.5 m²",
+      slaapkamers: "1",
+      badkamer: "Volledig",
+      kombuis: "Mini-kombuis",
     },
   };
 
@@ -32,7 +32,7 @@ const Index = () => {
     price: "R350,000",
     imageUrl: "/src/assets/huis2.webp",
     features: [
-      "Efficient kitchenette",
+      "Mini-kombuis",
       "Gasstoof",
       "Kompakte badkamer",
       "Veeldoelige leefarea",
@@ -40,10 +40,10 @@ const Index = () => {
       "Moderne afwerkings",
     ],
     specs: {
-      size: "20 m²",
-      bedrooms: "Deel van leefarea",
-      bathroom: "Kompak",
-      kitchen: "Mini-kombuis",
+      grootte: "20 m²",
+      slaapkamers: "Deel van leefarea",
+      badkamers: "Kompak",
+      kombuis: "Mini-kombuis",
     },
   };
 
