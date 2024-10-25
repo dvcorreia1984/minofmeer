@@ -13,7 +13,7 @@ const PreOrderButton = ({ onClick, price }: PreOrderButtonProps) => {
         onClick={onClick}
         className="bg-minofmeer-500 hover:bg-minofmeer-600 text-white px-8 py-6 text-lg h-auto"
       >
-        Bestel nou
+        Pre-order now
       </Button>
     </div>
   );

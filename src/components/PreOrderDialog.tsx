@@ -23,8 +23,8 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Bestelling ingedien!",
-      description: "Ons sal jou kontak met meer besonderhede oor MinOfMeer behuising.",
+      title: "Pre-order submitted!",
+      description: "We'll contact you soon with more details about your new MinOfMeer home.",
     });
     onOpenChange(false);
   };
@@ -33,11 +33,11 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Voorafbestelling {unitName}</DialogTitle>
+          <DialogTitle>Pre-order {unitName}</DialogTitle>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
-            <Label htmlFor="name">Volle Name</Label>
+            <Label htmlFor="name">Full Name</Label>
             <Input
               id="name"
               required
@@ -46,7 +46,7 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="email">Epos</Label>
+            <Label htmlFor="email">Email</Label>
             <Input
               id="email"
               type="email"
@@ -56,7 +56,7 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="phone">Kontak besonderhede</Label>
+            <Label htmlFor="phone">Phone Number</Label>
             <Input
               id="phone"
               type="tel"
@@ -67,10 +67,10 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
           </div>
           <div className="pt-4 border-t">
             <p className="text-sm text-gray-500 mb-4">
-              Totale Prys: <span className="font-semibold text-black">{price}</span>
+              Total Price: <span className="font-semibold text-black">{price}</span>
             </p>
             <Button type="submit" className="w-full bg-minofmeer-500 hover:bg-minofmeer-600">
-              Bevestig bestelling
+              Confirm Pre-order
             </Button>
           </div>
         </form>
