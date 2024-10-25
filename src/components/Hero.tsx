@@ -20,7 +20,7 @@ const Hero = () => {
           MinOfMeer
         </h1>
         <p className="text-xl md:text-2xl mb-12 max-w-2xl animate-fade-in">
-          Premium modular homes designed for modern living
+        Bekostigbaar en selfstandige woon of werk oplossings.
         </p>
         <button
           onClick={scrollToNextSection}
