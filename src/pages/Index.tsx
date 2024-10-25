@@ -6,7 +6,7 @@ const Index = () => {
     title: "31.5 m² One-Bedroom Unit",
     description: "Experience comfortable living in our spacious one-bedroom unit, complete with a fully-equipped mini-kitchen and modern bathroom. Perfect for individuals or couples seeking a premium living space.",
     price: "R1,500,000",
-    imageUrl: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
+    imageUrl: "/one-bedroom-concept.jpg",
     features: [
       "Fully-equipped mini-kitchen",
       "Modern bathroom with shower",
@@ -14,6 +14,8 @@ const Index = () => {
       "Built-in storage solutions",
       "Energy-efficient appliances",
       "High-quality finishes",
+      "Spacious covered patio",
+      "Contemporary exterior design",
     ],
     specs: {
       size: "31.5 m²",
