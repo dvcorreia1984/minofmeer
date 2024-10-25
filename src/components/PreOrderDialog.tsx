@@ -67,10 +67,10 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
           </div>
           <div className="pt-4 border-t">
             <p className="text-sm text-gray-500 mb-4">
-              Total Price: <span className="font-semibold text-black">{price}</span>
+              Totale Prys: <span className="font-semibold text-black">{price}</span>
             </p>
             <Button type="submit" className="w-full bg-minofmeer-500 hover:bg-minofmeer-600">
-              Confirm Pre-order
+              Bevestig bestelling
             </Button>
           </div>
         </form>
