@@ -1,9 +1,9 @@
 interface SpecificationsProps {
   specs: {
-    size: string;
-    bedrooms: string;
-    bathroom: string;
-    kitchen: string;
+    grootte: string;
+    slaapkamers: string;
+    badkamer: string;
+    kombuis: string;
   };
 }
 

@@ -11,10 +11,10 @@ interface UnitSectionProps {
   imageUrl: string;
   features: string[];
   specs: {
-    size: string;
-    bedrooms: string;
-    bathroom: string;
-    kitchen: string;
+    grootte: string;
+    slaapkamers: string;
+    badkamer: string;
+    kombuis: string;
   };
   reversed?: boolean;
 }
