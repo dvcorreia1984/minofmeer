@@ -1,13 +1,12 @@
 import Hero from "@/components/Hero";
 import UnitSection from "@/components/UnitSection";
-import Gallery from "@/components/Gallery";
 
 const Index = () => {
   const oneBedroom = {
     title: "31.5 m² One-Bedroom Unit",
     description: "Experience comfortable living in our spacious one-bedroom unit, complete with a fully-equipped mini-kitchen and modern bathroom. Perfect for individuals or couples seeking a premium living space.",
     price: "R1,500,000",
-    imageUrl: "/src/assets/huis1.webp",
+    imageUrl: "/one-bedroom-section.png",
     features: [
       "Fully-equipped mini-kitchen",
       "Modern bathroom with shower",
@@ -30,7 +29,7 @@ const Index = () => {
     title: "20 m² Single Unit",
     description: "Our compact single unit offers smart living at its finest, featuring a practical kitchenette with gas stovetop and a well-designed bathroom. Ideal for those seeking an efficient, modern living space.",
     price: "R900,000",
-    imageUrl: "/src/assets/huis2.webp",
+    imageUrl: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7",
     features: [
       "Efficient kitchenette",
       "Gas stovetop",
@@ -54,7 +53,6 @@ const Index = () => {
         <UnitSection {...oneBedroom} />
         <UnitSection {...singleUnit} reversed />
       </div>
-      <Gallery />
     </main>
   );
 };
