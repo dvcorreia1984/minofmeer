@@ -4,22 +4,22 @@ import { Card, CardContent } from "@/components/ui/card";
 const Gallery = () => {
   const images = [
     {
-      url: "https://images.unsplash.com/photo-1721322800607-8c38375eef04",
+      url: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
       alt: "Modern living room",
       caption: "Spacious, well-lit living areas"
     },
     {
-      url: "https://images.unsplash.com/photo-1496307653780-42ee777d4833",
+      url: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3",
       alt: "Exterior view",
       caption: "Contemporary architectural design"
     },
     {
-      url: "https://images.unsplash.com/photo-1459767129954-1b1c1f9b9ace",
+      url: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c",
       alt: "Building exterior",
       caption: "Premium quality construction"
     },
     {
-      url: "https://images.unsplash.com/photo-1518005020951-eccb494ad742",
+      url: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea",
       alt: "Modern facade",
       caption: "Sustainable materials"
     }
