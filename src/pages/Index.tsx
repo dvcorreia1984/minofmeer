@@ -5,7 +5,7 @@ import Gallery from "@/components/Gallery";
 const Index = () => {
   const oneBedroom = {
     title: "31.5 m² Een-Slaapkamer Eenheid",
-    description: " 'n Ruim eenheid met 'n aparte slaapkamer, volledig toegeruste kombuis met stoof en oond, badkamer, en leef-/eetarea. Hierdie eenheid is ideaal vir kliënte wat ‘n bietjie meer spasie en gerief benodig.",
+    description: " 'n Ruim eenheid met 'n aparte slaapkamer, volledig toegeruste kombuis met stoof en oond, badkamer, en leef-/eetarea. Hierdie eenheid is ideaal vir kliënte wat 'n bietjie meer spasie en gerief benodig.",
     price: "R450,000",
     imageUrl: "/src/assets/huis1.webp",
     features: [
@@ -42,7 +42,7 @@ const Index = () => {
     specs: {
       grootte: "20 m²",
       slaapkamers: "Deel van leefarea",
-      badkamers: "Kompak",
+      badkamer: "Kompak",
       kombuis: "Mini-kombuis",
     },
   };
