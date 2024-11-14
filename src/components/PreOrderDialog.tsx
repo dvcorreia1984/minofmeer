@@ -23,8 +23,8 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Pre-order submitted!",
-      description: "We'll contact you soon with more details about your new MinOfMeer home.",
+      title: "Bestelling ingedien!",
+      description: "Ons sal jou kontak met meer besonderhede oor MinOfMeer behuising.",
     });
     onOpenChange(false);
   };
@@ -33,11 +33,11 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Pre-order {unitName}</DialogTitle>
+          <DialogTitle>Voorafbestelling {unitName}</DialogTitle>
         </DialogHeader>
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="space-y-2">
-            <Label htmlFor="name">Full Name</Label>
+            <Label htmlFor="name">Volle Name</Label>
             <Input
               id="name"
               required
@@ -46,7 +46,7 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email">Epos</Label>
             <Input
               id="email"
               type="email"
@@ -56,7 +56,7 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="phone">Phone Number</Label>
+            <Label htmlFor="phone">Kontak besonderhede</Label>
             <Input
               id="phone"
               type="tel"

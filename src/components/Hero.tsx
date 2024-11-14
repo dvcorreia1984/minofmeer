@@ -10,7 +10,7 @@ const Hero = () => {
     <div className="relative h-screen w-full">
       <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-black/30">
         <img
-          src="https://images.unsplash.com/photo-1518005020951-eccb494ad742"
+          src="/src/assets/hero.webp"
           alt="Modern modular home"
           className="w-full h-full object-cover"
         />
@@ -20,7 +20,7 @@ const Hero = () => {
           MinOfMeer
         </h1>
         <p className="text-xl md:text-2xl mb-12 max-w-2xl animate-fade-in">
-          Premium modular homes designed for modern living
+        Bekostigbaar en selfstandige woon of werk oplossings.
         </p>
         <button
           onClick={scrollToNextSection}
