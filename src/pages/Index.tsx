@@ -7,7 +7,7 @@ const Index = () => {
     title: "31.5 m² Een-Slaapkamer Eenheid",
     description: " 'n Ruim eenheid met 'n aparte slaapkamer, volledig toegeruste kombuis met stoof en oond, badkamer, en leef-/eetarea. Hierdie eenheid is ideaal vir kliënte wat 'n bietjie meer spasie en gerief benodig.",
     price: "R450,000",
-    imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    imageUrl: "/huis1.webp",
     features: [
       "Volledig-toegeruste mini-kombuis",
       "Moderne badkamer met stort",
@@ -30,7 +30,7 @@ const Index = () => {
     title: "20 m² Enkel eenheid",
     description: "'n Kompakte eenheid met 'n ingeboude tweeplaat-gasstofie in die kombuis, badkamer, en leefarea. Hierdie eenheid bied 'n doeltreffende en bekostigbare oplossing vir enkelbewoning of kleiner ruimtes.",
     price: "R350,000",
-    imageUrl: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea",
+    imageUrl: "/huis2.webp",
     features: [
       "Mini-kombuis",
       "Gasstoof",
