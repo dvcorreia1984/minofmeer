@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { Switch } from "@/components/ui/switch";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
 
@@ -34,6 +35,8 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
     floor: "vinyl",
     exterior: "standard",
   });
+
+  const [solarPower, setSolarPower] = useState(false);
 
   const { toast } = useToast();
 
@@ -169,6 +172,15 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
                   </SelectContent>
                 </Select>
               </div>
+            </div>
+
+            <div className="flex items-center space-x-2 pt-4 border-t">
+              <Switch
+                id="solar-power"
+                checked={solarPower}
+                onCheckedChange={setSolarPower}
+              />
+              <Label htmlFor="solar-power">Sonkrag Installasie</Label>
             </div>
 
             <div className="pt-4 border-t">
