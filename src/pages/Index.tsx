@@ -1,61 +1,61 @@
-import Hero from "@/components/Hero";
-import UnitSection from "@/components/UnitSection";
-import Gallery from "@/components/Gallery";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Index = () => {
-  const oneBedroom = {
-    title: "31.5 m² Een-Slaapkamer Eenheid",
-    description: " 'n Ruim eenheid met 'n aparte slaapkamer, volledig toegeruste kombuis met stoof en oond, badkamer, en leef-/eetarea. Hierdie eenheid is ideaal vir kliënte wat 'n bietjie meer spasie en gerief benodig.",
-    price: "R450,000",
-    imageUrl: "/huis1.webp",
-    features: [
-      "Volledig-toegeruste mini-kombuis",
-      "Moderne badkamer met stort",
-      "Aparte slaapkamer",
-      "Ingeboude stoorspasie",
-      "Kragbesparende toestelle",
-      "Hoe kwaliteit afwerking",
-      "Ruim stoeparea",
-      "Kontemporêre styl",
-    ],
-    specs: {
-      grootte: "31.5 m²",
-      slaapkamers: "1",
-      badkamer: "Volledig",
-      kombuis: "Mini-kombuis",
-    },
-  };
-
-  const singleUnit = {
-    title: "20 m² Enkel eenheid",
-    description: "'n Kompakte eenheid met 'n ingeboude tweeplaat-gasstofie in die kombuis, badkamer, en leefarea. Hierdie eenheid bied 'n doeltreffende en bekostigbare oplossing vir enkelbewoning of kleiner ruimtes.",
-    price: "R350,000",
-    imageUrl: "/huis2.webp",
-    features: [
-      "Mini-kombuis",
-      "Gasstoof",
-      "Kompakte badkamer",
-      "Veeldoelige leefarea",
-      "Veeldoelige meubels",
-      "Moderne afwerkings",
-    ],
-    specs: {
-      grootte: "20 m²",
-      slaapkamers: "Deel van leefarea",
-      badkamer: "Kompak",
-      kombuis: "Mini-kombuis",
-    },
-  };
-
   return (
-    <main className="bg-white">
-      <Hero />
-      <div id="units">
-        <UnitSection {...oneBedroom} />
-        <UnitSection {...singleUnit} reversed />
+    <div className="min-h-screen bg-white">
+      <div className="section-container py-24">
+        <h1 className="text-4xl font-bold text-center mb-12">Voortrek</h1>
+        <p className="text-center text-gray-600 mb-16">
+          Kwaliteit houtwerk en modulêre behuising oplossings
+        </p>
+        
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle>Modulêre Behuising</CardTitle>
+              <CardDescription>
+                Bekostigbaar en selfstandige woon of werk oplossings
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col items-center">
+              <img 
+                src="/huis1.webp" 
+                alt="Modulêre Behuising" 
+                className="w-full h-48 object-cover rounded-md mb-6"
+              />
+              <Link to="/moduler">
+                <Button size="lg">
+                  Verken Modulêre Opsies
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+
+          <Card className="hover:shadow-lg transition-shadow">
+            <CardHeader>
+              <CardTitle>Houtwerk</CardTitle>
+              <CardDescription>
+                Handgemaakte meubels en pasgemaakte kabinetwerk
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="flex flex-col items-center">
+              <img 
+                src="/gallery1.webp" 
+                alt="Houtwerk" 
+                className="w-full h-48 object-cover rounded-md mb-6"
+              />
+              <Link to="/houtwerk">
+                <Button size="lg">
+                  Verken Houtwerk
+                </Button>
+              </Link>
+            </CardContent>
+          </Card>
+        </div>
       </div>
-      <Gallery />
-    </main>
+    </div>
   );
 };
 
