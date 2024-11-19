@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="section-container py-16">
         <div className="grid md:grid-cols-4 gap-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">MinOfMeer</h3>
+            <h3 className="text-xl font-bold mb-4">Voortrek</h3>
             <p className="text-gray-400">
-              Committed to innovative, eco-friendly modular housing solutions that transform the way we think about modern living.
+              Committed to innovative, eco-friendly modular housing solutions and quality woodworking that transform the way we think about modern living.
             </p>
           </div>
 
@@ -17,8 +17,13 @@ const Footer = () => {
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-400 hover:text-white transition-colors">
-                  Home
+                <Link to="/moduler" className="text-gray-400 hover:text-white transition-colors">
+                  Moduler
+                </Link>
+              </li>
+              <li>
+                <Link to="/houtwerk" className="text-gray-400 hover:text-white transition-colors">
+                  Houtwerk
                 </Link>
               </li>
               <li>
@@ -43,7 +48,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <Mail className="h-4 w-4" />
-                info@minofmeer.co.za
+                info@voortrek.co.za
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <MapPin className="h-4 w-4" />
@@ -70,7 +75,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} MinOfMeer. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Voortrek. All rights reserved.</p>
         </div>
       </div>
     </footer>
