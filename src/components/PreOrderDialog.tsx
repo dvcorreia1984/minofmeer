@@ -1,12 +1,12 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Switch } from "@/components/ui/switch";
+import { Label } from "@/components/ui/label";
 import { useState } from "react";
 import { useToast } from "@/components/ui/use-toast";
+import PersonalInfoForm from "./pre-order/PersonalInfoForm";
+import FinishesForm from "./pre-order/FinishesForm";
 
 interface PreOrderDialogProps {
   open: boolean;
@@ -56,6 +56,12 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
     exterior: ["standard", "premium", "custom"],
   };
 
+  const calculateTotalPrice = () => {
+    const basePrice = parseInt(price.replace(/[^0-9]/g, ""));
+    const solarPowerCost = solarPower ? 70000 : 0;
+    return `R${(basePrice + solarPowerCost).toLocaleString()}`;
+  };
+
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px] max-h-[90vh]">
@@ -64,114 +70,14 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
         </DialogHeader>
         <ScrollArea className="h-[60vh] pr-4">
           <form onSubmit={handleSubmit} className="space-y-6">
-            <div className="space-y-2">
-              <Label htmlFor="name">Volle Name</Label>
-              <Input
-                id="name"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="email">Epos</Label>
-              <Input
-                id="email"
-                type="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-              />
-            </div>
-            <div className="space-y-2">
-              <Label htmlFor="phone">Kontak besonderhede</Label>
-              <Input
-                id="phone"
-                type="tel"
-                required
-                value={formData.phone}
-                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-              />
-            </div>
-
+            <PersonalInfoForm formData={formData} setFormData={setFormData} />
+            
             <div className="space-y-4 pt-4 border-t">
-              <h3 className="font-semibold">Afwerkings Opsies</h3>
-              
-              <div className="space-y-2">
-                <Label htmlFor="kitchen">Kombuis Afwerking</Label>
-                <Select
-                  value={finishes.kitchen}
-                  onValueChange={(value) => setFinishes({ ...finishes, kitchen: value })}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Kies kombuis afwerking" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {finishingOptions.kitchen.map((option) => (
-                      <SelectItem key={option} value={option} className="capitalize">
-                        {option}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="bathroom">Badkamer Afwerking</Label>
-                <Select
-                  value={finishes.bathroom}
-                  onValueChange={(value) => setFinishes({ ...finishes, bathroom: value })}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Kies badkamer afwerking" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {finishingOptions.bathroom.map((option) => (
-                      <SelectItem key={option} value={option} className="capitalize">
-                        {option}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="floor">Vloer Afwerking</Label>
-                <Select
-                  value={finishes.floor}
-                  onValueChange={(value) => setFinishes({ ...finishes, floor: value })}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Kies vloer afwerking" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {finishingOptions.floor.map((option) => (
-                      <SelectItem key={option} value={option} className="capitalize">
-                        {option}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="exterior">Eksterieur Afwerking</Label>
-                <Select
-                  value={finishes.exterior}
-                  onValueChange={(value) => setFinishes({ ...finishes, exterior: value })}
-                >
-                  <SelectTrigger>
-                    <SelectValue placeholder="Kies eksterieur afwerking" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {finishingOptions.exterior.map((option) => (
-                      <SelectItem key={option} value={option} className="capitalize">
-                        {option}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
+              <FinishesForm
+                finishes={finishes}
+                setFinishes={setFinishes}
+                finishingOptions={finishingOptions}
+              />
             </div>
 
             <div className="flex items-center space-x-2 pt-4 border-t">
@@ -180,12 +86,12 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
                 checked={solarPower}
                 onCheckedChange={setSolarPower}
               />
-              <Label htmlFor="solar-power">Sonkrag Installasie</Label>
+              <Label htmlFor="solar-power">Sonkrag Installasie (+R70 000)</Label>
             </div>
 
             <div className="pt-4 border-t">
               <p className="text-sm text-gray-500 mb-4">
-                Total Price: <span className="font-semibold text-black">{price}</span>
+                Total Price: <span className="font-semibold text-black">{calculateTotalPrice()}</span>
               </p>
               <Button type="submit" className="w-full bg-minofmeer-500 hover:bg-minofmeer-600">
                 Confirm Pre-order
