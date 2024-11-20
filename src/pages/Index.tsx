@@ -47,7 +47,6 @@ const Index = () => {
             <video 
               className="w-full h-full"
               autoPlay 
-              loop 
               playsInline
               controls
             >
