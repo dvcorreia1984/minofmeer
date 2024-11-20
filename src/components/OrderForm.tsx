@@ -26,7 +26,7 @@ const OrderForm = () => {
     );
 
     // Open WhatsApp with pre-filled message
-    window.open(`https://wa.me/27842513951?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/27842513952?text=${whatsappMessage}`, '_blank');
 
     // Create mailto link with order details
     const mailtoSubject = encodeURIComponent("Nuwe Moduler Bestelling");
