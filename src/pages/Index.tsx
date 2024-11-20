@@ -6,7 +6,14 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <div className="section-container py-24">
-        <h1 className="text-4xl font-bold text-center mb-12">Voortrek</h1>
+        <div className="flex items-center justify-center gap-4 mb-12">
+          <img 
+            src="/voortreklogo.jpg" 
+            alt="Voortrek Logo" 
+            className="w-16 h-16 object-contain"
+          />
+          <h1 className="text-4xl font-bold">Voortrek</h1>
+        </div>
         <p className="text-center text-gray-600 mb-16">
           Kwaliteit houtwerk en modulêre behuising oplossings
         </p>
