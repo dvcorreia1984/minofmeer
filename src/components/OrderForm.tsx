@@ -23,20 +23,22 @@ const OrderForm = () => {
     // Generate a random order number between 1000 and 9999
     const orderNumber = Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000;
 
-    // Format the message for WhatsApp
-    const whatsappMessage = encodeURIComponent(
-      `Nuwe Moduler Bestelling #${orderNumber}:\n\nNaam: ${formData.name}\nEpos: ${formData.email}\nTelefoon: ${formData.phone}\nEenheid: ${formData.unit}`
-    );
+    // Format the message
+    const message = `Nuwe Moduler Bestelling #${orderNumber}:\n\nNaam: ${formData.name}\nEpos: ${formData.email}\nTelefoon: ${formData.phone}\nEenheid: ${formData.unit}`;
 
-    // Open WhatsApp with pre-filled message
-    window.open(`https://wa.me/27842513952?text=${whatsappMessage}`, '_blank');
+    // Check if the device is mobile
+    const isMobile = window.innerWidth <= 768;
 
-    // Create mailto link with order details
-    const mailtoSubject = encodeURIComponent("Nuwe Moduler Bestelling");
-    const mailtoBody = encodeURIComponent(
-      `Nuwe Moduler Bestelling #${orderNumber}:\n\nNaam: ${formData.name}\nEpos: ${formData.email}\nTelefoon: ${formData.phone}\nEenheid: ${formData.unit}`
-    );
-    window.location.href = `mailto:yolande@voortrek.co.za?subject=${mailtoSubject}&body=${mailtoBody}`;
+    if (isMobile) {
+      // Use WhatsApp for mobile
+      const whatsappMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/27842513952?text=${whatsappMessage}`, '_blank');
+    } else {
+      // Use email for desktop
+      const mailtoSubject = encodeURIComponent("Nuwe Moduler Bestelling");
+      const mailtoBody = encodeURIComponent(message);
+      window.location.href = `mailto:yolande@voortrek.co.za?subject=${mailtoSubject}&body=${mailtoBody}`;
+    }
 
     toast({
       title: "Bestelling gestuur!",
