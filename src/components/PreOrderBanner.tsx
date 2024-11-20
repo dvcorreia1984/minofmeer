@@ -8,7 +8,7 @@ const PreOrderBanner = () => {
     <div className="fixed bottom-0 left-0 right-0 bg-primary text-white p-4 shadow-lg z-50">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-center sm:text-left">
-          <h3 className="text-lg font-semibold">Bestel nou jou modulêre huis</h3>
+          <h3 className="text-lg font-semibold">Bestel nou jou modulêre huis vanaf R450 000</h3>
           <p className="text-sm text-white/90">Betaal'n deposito van R50 000 jou eenheid te verseker.</p>
         </div>
         <Button 
