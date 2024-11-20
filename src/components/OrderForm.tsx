@@ -60,7 +60,7 @@ const OrderForm = () => {
     <div className="min-h-screen bg-white py-24">
       <div className="section-container">
         <div className="max-w-md mx-auto">
-          <h1 className="text-3xl font-bold mb-8">Bestel jou Modulêre eenheid</h1>
+          <h1 className="text-3xl font-bold mb-8">Bestel nou jou modulêre eenheid</h1>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
               <Label htmlFor="name">Volle Name</Label>
