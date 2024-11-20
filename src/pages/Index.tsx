@@ -16,7 +16,7 @@ const Index = () => {
             />
             <div>
               <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
-              <div className="mt-2 text-gray-700 space-y-1">
+              <div className="mt-2 text-gray-700 flex items-center gap-6">
                 <div className="flex items-center gap-2">
                   <MapPin className="h-4 w-4" />
                   <span>Orania, Suid-Africa</span>
