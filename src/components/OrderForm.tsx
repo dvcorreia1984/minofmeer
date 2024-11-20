@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const OrderForm = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +13,7 @@ const OrderForm = () => {
     email: "",
     phone: "",
     unit: "standard",
+    solarPower: false
   });
 
   const { toast } = useToast();
@@ -23,8 +25,14 @@ const OrderForm = () => {
     // Generate a random order number between 1000 and 9999
     const orderNumber = Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000;
 
+    // Calculate total price
+    let basePrice = 450000; // Standard price
+    if (formData.unit === "luxury") basePrice = 550000;
+    if (formData.unit === "custom") basePrice = 650000;
+    if (formData.solarPower) basePrice += 80000;
+
     // Format the message
-    const message = `Nuwe Moduler Bestelling #${orderNumber}:\n\nNaam: ${formData.name}\nEpos: ${formData.email}\nTelefoon: ${formData.phone}\nEenheid: ${formData.unit}`;
+    const message = `Nuwe Moduler Bestelling #${orderNumber}:\n\nNaam: ${formData.name}\nEpos: ${formData.email}\nTelefoon: ${formData.phone}\nEenheid: ${formData.unit}\nSonkrag: ${formData.solarPower ? 'Ja' : 'Nee'}\nTotale Prys: R${basePrice.toLocaleString()}`;
 
     // Check if the device is mobile
     const isMobile = window.innerWidth <= 768;
@@ -94,10 +102,20 @@ const OrderForm = () => {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="standard">Standaard Moduler (R450 000)</SelectItem>
-                  <SelectItem value="premium">Premium Moduler (R650 000)</SelectItem>
-                  <SelectItem value="luxury">Luukse Moduler (R850 000)</SelectItem>
+                  <SelectItem value="luxury">Luukse Moduler (R550 000)</SelectItem>
+                  <SelectItem value="custom">Pasmaak Moduler (R650 000)</SelectItem>
                 </SelectContent>
               </Select>
+            </div>
+            <div className="flex items-center space-x-2">
+              <Checkbox
+                id="solarPower"
+                checked={formData.solarPower}
+                onCheckedChange={(checked) => 
+                  setFormData({ ...formData, solarPower: checked as boolean })
+                }
+              />
+              <Label htmlFor="solarPower">Sonkrag installasie (+R80 000)</Label>
             </div>
             <Button type="submit" className="w-full">
               Stuur Bestelling
