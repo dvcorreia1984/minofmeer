@@ -9,6 +9,7 @@ import Contact from "./pages/Contact";
 import Houtwerk from "./pages/Houtwerk";
 import Moduler from "./pages/Moduler";
 import Footer from "./components/Footer";
+import PreOrderBanner from "./components/PreOrderBanner";
 
 const queryClient = new QueryClient();
 
@@ -18,7 +19,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen pb-[88px] sm:pb-[76px]">
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
@@ -29,6 +30,7 @@ const App = () => (
             </Routes>
           </main>
           <Footer />
+          <PreOrderBanner />
         </div>
       </BrowserRouter>
     </TooltipProvider>
