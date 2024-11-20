@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { Info } from "lucide-react";
 
 const Index = () => {
   return (
@@ -14,9 +16,16 @@ const Index = () => {
           />
           <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
         </div>
-        <p className="text-center text-gray-600 mb-16">
+        <p className="text-center text-gray-600 mb-8">
           Kwaliteit houtwerk en modulêre behuising oplossings
         </p>
+        
+        <Alert className="max-w-3xl mx-auto mb-16 bg-blue-50 border-blue-200">
+          <Info className="h-5 w-5 text-blue-600" />
+          <AlertDescription className="text-blue-800">
+            Ons spesialiseer in die vervaardiging van hoë-gehalte houtwerk en modulêre behuising oplossings. Met ons ervaring en vakmanskap verseker ons dat elke projek aan die hoogste standaarde voldoen.
+          </AlertDescription>
+        </Alert>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <Card className="hover:shadow-lg transition-shadow">
