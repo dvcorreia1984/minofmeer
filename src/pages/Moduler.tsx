@@ -16,7 +16,7 @@ const Moduler = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card className="p-6">
             <img 
-              src="/huis1.webp" 
+              src="/moduler1.webp" 
               alt="Modulêre Huis 1" 
               className="w-full h-48 object-cover rounded-md mb-4"
             />
