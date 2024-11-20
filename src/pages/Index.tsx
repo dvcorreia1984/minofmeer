@@ -42,7 +42,7 @@ const Index = () => {
             </CardHeader>
             <CardContent className="flex flex-col items-center">
               <img 
-                src="/voortreklogo.jpg" 
+                src="/kombuis.jpg" 
                 alt="Houtwerk" 
                 className="w-full h-48 object-cover rounded-md mb-6"
               />
