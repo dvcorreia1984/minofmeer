@@ -7,17 +7,19 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <div className="section-container py-24">
         <div className="flex flex-col items-center justify-center gap-4 mb-12">
-          <div className="flex items-center justify-center gap-6">
+          <div className="flex items-center justify-center gap-6 bg-[url('/wood-texture-light.jpg')] bg-cover p-8 rounded-lg">
             <img 
               src="/voortreklogo.jpg" 
               alt="Voortrek Logo" 
-              className="w-20 h-20 md:w-24 md:h-24 object-contain"
+              className="w-32 h-32 md:w-36 md:h-36 object-contain"
             />
-            <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
+            <div>
+              <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
+              <p className="text-gray-600 italic mt-2">
+                Kwaliteit houtwerk en modulêre behuising oplossings
+              </p>
+            </div>
           </div>
-          <p className="text-center text-gray-600 italic">
-            Kwaliteit houtwerk en modulêre behuising oplossings
-          </p>
         </div>
         
         <p className="max-w-3xl mx-auto mb-16 text-lg leading-relaxed text-gray-700 border-l-4 border-primary pl-6">
