@@ -24,28 +24,28 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     toast({
-      title: "Inquiry Submitted",
-      description: "We'll get back to you soon!",
+      title: "Navraag Gestuur",
+      description: "Ons sal binnekort met u in verbinding tree!",
     });
     setFormData({ name: "", email: "", phone: "", message: "" });
   };
 
   const faqs = [
     {
-      question: "How long does it take to set up a MinOfMeer home?",
-      answer: "Typically, the entire process from order to move-in takes 8-12 weeks. This includes manufacturing, transportation, and on-site assembly."
+      question: "Hoe lank neem dit om 'n MinOfMeer huis op te rig?",
+      answer: "Tipies neem die hele proses vanaf bestelling tot intrek 8-12 weke. Dit sluit vervaardiging, vervoer en op-terrein montering in."
     },
     {
-      question: "What customization options are available?",
-      answer: "We offer various customization options including interior finishes, kitchen layouts, additional storage solutions, and exterior cladding options."
+      question: "Watter aanpassings-opsies is beskikbaar?",
+      answer: "Ons bied verskeie aanpassings-opsies aan, insluitend binne-afwerkings, kombuis-uitleg, addisionele bergingsoplossings, en buite-bekleding opsies."
     },
     {
-      question: "What's included in the price?",
-      answer: "Our prices include the complete unit, delivery, installation, and basic site works. Additional costs may apply for specific site requirements or custom features."
+      question: "Wat is by die prys ingesluit?",
+      answer: "Ons pryse sluit die volledige eenheid, aflewering, installasie en basiese terreinwerk in. Addisionele kostes mag van toepassing wees vir spesifieke terreinvereistes of pasgemaakte kenmerke."
     },
     {
-      question: "Are MinOfMeer homes eco-friendly?",
-      answer: "Yes! Our homes are built with sustainable materials, feature energy-efficient designs, and our manufacturing process minimizes waste."
+      question: "Is MinOfMeer huise omgewingsvriendelik?",
+      answer: "Ja! Ons huise word gebou met volhoubare materiale, het energie-doeltreffende ontwerpe, en ons vervaardigingsproses minimaliseer vermorsing."
     }
   ];
 
@@ -55,9 +55,9 @@ const Contact = () => {
         <BackButton />
         <div className="grid md:grid-cols-2 gap-12">
           <div>
-            <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
+            <h1 className="text-4xl font-bold mb-6">Kontak Ons</h1>
             <p className="text-gray-600 mb-8">
-              Get in touch with us to learn more about MinOfMeer homes or to start your journey to modular living.
+              Kom in verbinding met ons om meer te leer oor MinOfMeer huise of om jou reis na modulêre leefstyl te begin.
             </p>
             
             <div className="mb-8">
@@ -66,13 +66,13 @@ const Contact = () => {
                 onClick={() => window.open(`https://wa.me/27842513952`, '_blank')}
               >
                 <Phone className="h-4 w-4" />
-                Chat with us on WhatsApp
+                Gesels met ons op WhatsApp
               </Button>
             </div>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
+                <label htmlFor="name" className="block text-sm font-medium mb-2">Naam</label>
                 <Input
                   id="name"
                   value={formData.name}
@@ -81,7 +81,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
+                <label htmlFor="email" className="block text-sm font-medium mb-2">E-pos</label>
                 <Input
                   id="email"
                   type="email"
@@ -91,7 +91,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block text-sm font-medium mb-2">Phone</label>
+                <label htmlFor="phone" className="block text-sm font-medium mb-2">Telefoon</label>
                 <Input
                   id="phone"
                   type="tel"
@@ -101,7 +101,7 @@ const Contact = () => {
                 />
               </div>
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
+                <label htmlFor="message" className="block text-sm font-medium mb-2">Boodskap</label>
                 <Textarea
                   id="message"
                   value={formData.message}
@@ -109,18 +109,18 @@ const Contact = () => {
                   required
                 />
               </div>
-              <Button type="submit" className="w-full">Send Message</Button>
+              <Button type="submit" className="w-full">Stuur Boodskap</Button>
             </form>
 
             <div className="mt-8">
               <Button variant="outline" className="w-full">
-                <a href="/brochure.pdf" download>Download Brochure</a>
+                <a href="/brochure.pdf" download>Laai Brosjure Af</a>
               </Button>
             </div>
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+            <h2 className="text-2xl font-bold mb-6">Gereelde Vrae</h2>
             <Accordion type="single" collapsible className="w-full">
               {faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`}>
