@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { Phone } from "lucide-react";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -58,6 +59,16 @@ const Contact = () => {
             <p className="text-gray-600 mb-8">
               Get in touch with us to learn more about MinOfMeer homes or to start your journey to modular living.
             </p>
+            
+            <div className="mb-8">
+              <Button 
+                className="w-full flex items-center justify-center gap-2"
+                onClick={() => window.open(`https://wa.me/27842513952`, '_blank')}
+              >
+                <Phone className="h-4 w-4" />
+                Chat with us on WhatsApp
+              </Button>
+            </div>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
