@@ -44,7 +44,7 @@ const Contact = () => {
       answer: "Ons pryse sluit die volledige eenheid, aflewering, installasie en basiese terreinwerk in. Addisionele kostes mag van toepassing wees vir spesifieke terreinvereistes of pasgemaakte kenmerke."
     },
     {
-      question: "Is MinOfMeer huise omgewingsvriendelik?",
+      question: "Is VoortrekModuler huise omgewingsvriendelik?",
       answer: "Ja! Ons huise word gebou met volhoubare materiale, het energie-doeltreffende ontwerpe, en ons vervaardigingsproses minimaliseer vermorsing."
     }
   ];
@@ -57,7 +57,7 @@ const Contact = () => {
           <div>
             <h1 className="text-4xl font-bold mb-6">Kontak Ons</h1>
             <p className="text-gray-600 mb-8">
-              Kom in verbinding met ons om meer te leer oor MinOfMeer huise of om jou reis na modulêre leefstyl te begin.
+              Kom in verbinding met ons om meer te leer oor VoortrekModuler huise of om jou reis na modulêre leefstyl te begin.
             </p>
             
             <div className="mb-8">

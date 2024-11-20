@@ -47,7 +47,7 @@ const Advantages = () => {
         <div className="bg-minofmeer-50 rounded-lg p-8 mb-16">
           <h2 className="text-2xl font-bold mb-4">Our Commitment to Quality</h2>
           <p className="text-gray-600 mb-4">
-            Every MinOfMeer home is built to exceed industry standards, with full certification compliance
+            Every VoortrekModuler home is built to exceed industry standards, with full certification compliance
             and rigorous quality control throughout the manufacturing process.
           </p>
           <ul className="space-y-2">

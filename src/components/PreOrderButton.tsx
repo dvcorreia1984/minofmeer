@@ -11,7 +11,7 @@ const PreOrderButton = ({ onClick, price }: PreOrderButtonProps) => {
       <p className="text-3xl font-bold">{price}</p>
       <Button
         onClick={onClick}
-        className="bg-minofmeer-500 hover:bg-minofmeer-600 text-white px-8 py-6 text-lg h-auto"
+        className="bg-voortrekmoduler-500 hover:bg-voortrekmoduler-600 text-white px-8 py-6 text-lg h-auto"
       >
         Bestel nou
       </Button>
