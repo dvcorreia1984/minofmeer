@@ -44,7 +44,7 @@ const PreOrderDialog = ({ open, onOpenChange, unitName, price }: PreOrderDialogP
     e.preventDefault();
     toast({
       title: "Bestelling ingedien!",
-      description: "Ons sal jou kontak met meer besonderhede oor MinOfMeer behuising.",
+      description: "Ons sal jou kontak met meer besonderhede oor VoortrekModuler behuising.",
     });
     onOpenChange(false);
   };
