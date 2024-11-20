@@ -10,6 +10,7 @@ import Moduler from "./pages/Moduler";
 import OrderForm from "./components/OrderForm";
 import Footer from "./components/Footer";
 import PreOrderBanner from "./components/PreOrderBanner";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <div className="flex flex-col min-h-screen pb-[88px] sm:pb-[76px]">
+          <WhatsAppButton />
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Index />} />
