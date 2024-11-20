@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Advantages from "./pages/Advantages";
 import Contact from "./pages/Contact";
 import Houtwerk from "./pages/Houtwerk";
+import Moduler from "./pages/Moduler";
 import Footer from "./components/Footer";
 
 const queryClient = new QueryClient();
@@ -24,7 +25,7 @@ const App = () => (
               <Route path="/advantages" element={<Advantages />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/houtwerk" element={<Houtwerk />} />
-              <Route path="/moduler" element={<Index />} />
+              <Route path="/moduler" element={<Moduler />} />
             </Routes>
           </main>
           <Footer />
