@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Contact from "./pages/Contact";
 import Houtwerk from "./pages/Houtwerk";
 import Moduler from "./pages/Moduler";
+import OrderForm from "./components/OrderForm";
 import Footer from "./components/Footer";
 import PreOrderBanner from "./components/PreOrderBanner";
 
@@ -25,6 +26,7 @@ const App = () => (
               <Route path="/contact" element={<Contact />} />
               <Route path="/houtwerk" element={<Houtwerk />} />
               <Route path="/moduler" element={<Moduler />} />
+              <Route path="/order" element={<OrderForm />} />
             </Routes>
           </main>
           <Footer />

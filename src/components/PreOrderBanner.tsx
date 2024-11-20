@@ -12,7 +12,7 @@ const PreOrderBanner = () => {
           <p className="text-sm text-white/90">Betaal'n deposito van R50 000 jou eenheid te verseker.</p>
         </div>
         <Button 
-          onClick={() => navigate("/moduler")}
+          onClick={() => navigate("/order")}
           className="w-full sm:w-auto bg-white text-primary hover:bg-white/90"
         >
           Bestel Nou
