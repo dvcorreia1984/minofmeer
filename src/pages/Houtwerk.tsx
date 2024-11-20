@@ -85,7 +85,7 @@ const Houtwerk = () => {
             </p>
             <div className="space-y-2">
               <p className="flex items-center gap-2">
-                <span className="text-voortrek-orange">•</span> Tel: +27 (0) 21 123 4567
+                <span className="text-voortrek-orange">•</span> Tel: 084-251-3952
               </p>
               <p className="flex items-center gap-2">
                 <span className="text-voortrek-orange">•</span> E-pos: info@voortrek.co.za
