@@ -6,17 +6,19 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <div className="section-container py-24">
-        <div className="flex items-center justify-center gap-6 mb-8">
-          <img 
-            src="/voortreklogo.jpg" 
-            alt="Voortrek Logo" 
-            className="w-20 h-20 md:w-24 md:h-24 object-contain"
-          />
-          <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
+        <div className="flex flex-col items-center justify-center gap-4 mb-12">
+          <div className="flex items-center justify-center gap-6">
+            <img 
+              src="/voortreklogo.jpg" 
+              alt="Voortrek Logo" 
+              className="w-20 h-20 md:w-24 md:h-24 object-contain"
+            />
+            <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
+          </div>
+          <p className="text-center text-gray-600 italic">
+            Kwaliteit houtwerk en modulêre behuising oplossings
+          </p>
         </div>
-        <p className="text-center text-gray-600 mb-8">
-          Kwaliteit houtwerk en modulêre behuising oplossings
-        </p>
         
         <p className="max-w-3xl mx-auto mb-16 text-lg leading-relaxed text-gray-700 border-l-4 border-primary pl-6">
           Ons spesialiseer in die vervaardiging van hoë-gehalte houtwerk en modulêre behuising oplossings. Met ons ervaring en vakmanskap verseker ons dat elke projek aan die hoogste standaarde voldoen.
