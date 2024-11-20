@@ -36,13 +36,13 @@ const Index = () => {
             </div>
           </div>
         </div>
-        
+
         <p className="max-w-3xl mx-auto mb-16 text-lg leading-relaxed text-gray-700 border-l-4 border-primary pl-6">
           Ons spesialiseer in die vervaardiging van hoë-gehalte houtwerk en modulêre behuising oplossings. Met ons ervare en vakmanskap verseker ons dat elke projek aan die hoogste standaarde voldoen.
         </p>
 
         {/* Marketing Video Section */}
-        <div className="max-w-sm mx-auto mb-16">
+        <div className="max-w-sm md:max-w-2xl mx-auto mb-16">
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
             <video 
               className="w-full h-full"
