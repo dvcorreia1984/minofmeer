@@ -16,17 +16,17 @@ const Index = () => {
             />
             <div>
               <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
-              <div className="mt-2 text-gray-700 flex items-center gap-6">
+              <div className="mt-2 text-gray-700 flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
                 <div className="flex items-center gap-2">
-                  <MapPin className="h-4 w-4" />
+                  <MapPin className="h-4 w-4 flex-shrink-0" />
                   <span>N34 Sandsteen Straat, Orania, 8752</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4" />
+                  <Phone className="h-4 w-4 flex-shrink-0" />
                   <span>+27 (0) 84 251 3952</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4" />
+                  <Mail className="h-4 w-4 flex-shrink-0" />
                   <span>yolande@voortrek.co.za</span>
                 </div>
               </div>
