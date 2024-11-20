@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Voortrek</h3>
             <p className="text-gray-400">
-              Committed to innovative, eco-friendly modular housing solutions and quality woodworking that transform the way we think about modern living.
+            Wat is modulêr? Modulêr verwys na iets wat gemaak word uit afsondelike, selfstandige en standaard eenhede wat maklik gekombineer of rangskik kan word, gebaseer op 'n module of modules, wat maklike montering of oprigting bewerkstellig. 
             </p>
           </div>
 
@@ -40,19 +40,19 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Contact</h4>
+            <h4 className="font-semibold mb-4">Kontak ons</h4>
             <ul className="space-y-2">
               <li className="flex items-center gap-2 text-gray-400">
                 <Phone className="h-4 w-4" />
-                +27 (0) 21 123 4567
+                +27 (0) 84 251 3952
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <Mail className="h-4 w-4" />
-                info@voortrek.co.za
+                yolande@voortrek.co.za
               </li>
               <li className="flex items-center gap-2 text-gray-400">
                 <MapPin className="h-4 w-4" />
-                Cape Town, South Africa
+                Orania, Suid-Africa
               </li>
             </ul>
           </div>
@@ -75,11 +75,11 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Voortrek. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Voortrek. Alle regte voorbehou.</p>
         </div>
       </div>
     </footer>
   );
 };
 
-export default Footer;
+export default Footer;git 
