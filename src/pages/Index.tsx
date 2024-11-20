@@ -38,8 +38,24 @@ const Index = () => {
         </div>
         
         <p className="max-w-3xl mx-auto mb-16 text-lg leading-relaxed text-gray-700 border-l-4 border-primary pl-6">
-          Ons spesialiseer in die vervaardiging van hoë-gehalte houtwerk en modulêre behuising oplossings. Met ons ervaring en vakmanskap verseker ons dat elke projek aan die hoogste standaarde voldoen.
+          Ons spesialiseer in die vervaardiging van hoë-gehalte houtwerk en modulêre behuising oplossings. Met ons ervare en vakmanskap verseker ons dat elke projek aan die hoogste standaarde voldoen.
         </p>
+
+        {/* Marketing Video Section */}
+        <div className="max-w-sm mx-auto mb-16">
+          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <video 
+              className="w-full h-full"
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+            >
+              <source src="/video.webm" type="video/webm" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
         
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <Card className="hover:shadow-lg transition-shadow">
