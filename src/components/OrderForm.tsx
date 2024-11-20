@@ -31,6 +31,13 @@ const OrderForm = () => {
     // Open WhatsApp with pre-filled message
     window.open(`https://wa.me/27842513952?text=${whatsappMessage}`, '_blank');
 
+    // Create mailto link with order details
+    const mailtoSubject = encodeURIComponent("Nuwe Moduler Bestelling");
+    const mailtoBody = encodeURIComponent(
+      `Nuwe Moduler Bestelling #${orderNumber}:\n\nNaam: ${formData.name}\nEpos: ${formData.email}\nTelefoon: ${formData.phone}\nEenheid: ${formData.unit}`
+    );
+    window.location.href = `mailto:yolande@voortrek.co.za?subject=${mailtoSubject}&body=${mailtoBody}`;
+
     toast({
       title: "Bestelling gestuur!",
       description: "Ons sal binnekort met u in verbinding tree.",
