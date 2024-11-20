@@ -46,7 +46,7 @@ const Moduler = () => {
 
           <Card className="p-6">
             <img 
-              src="/hero.webp" 
+              src="/moduler3.webp" 
               alt="Modulêre Huis 3" 
               className="w-full h-48 object-cover rounded-md mb-4"
             />
