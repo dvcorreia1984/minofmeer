@@ -114,7 +114,7 @@ const Contact = () => {
 
             <div className="mt-8">
               <Button variant="outline" className="w-full">
-                <a href="/brochure.pdf" download>Laai Brosjure Af</a>
+                <a href="/brosjure.pdf" download>Laai Brosjure Af</a>
               </Button>
             </div>
           </div>
