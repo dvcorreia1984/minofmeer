@@ -1,15 +1,34 @@
-import emailjs from '@emailjs/browser';
+import nodemailer from 'nodemailer';
 
-// Initialize EmailJS with your user ID
-emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS User ID
+// Create reusable transporter object using SMTP transport
+const transporter = nodemailer.createTransport({
+  host: 'smtp.voortrek.co.za',
+  port: 465,
+  secure: true, // true for 465, false for other ports
+  auth: {
+    user: 'yolande@voortrek.co.za',
+    pass: process.env.VITE_EMAIL_PASSWORD // Password should be set in environment variables
+  }
+});
 
-export const sendEmail = async (templateParams: any) => {
+interface EmailParams {
+  to: string;
+  subject: string;
+  text: string;
+  html?: string;
+}
+
+export const sendEmail = async (params: EmailParams) => {
   try {
-    const response = await emailjs.send(
-      "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-      "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
-      templateParams
-    );
+    const mailOptions = {
+      from: 'yolande@voortrek.co.za',
+      to: params.to,
+      subject: params.subject,
+      text: params.text,
+      html: params.html
+    };
+
+    const response = await transporter.sendMail(mailOptions);
     return response;
   } catch (error) {
     console.error("Error sending email:", error);
