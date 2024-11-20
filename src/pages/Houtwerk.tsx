@@ -6,17 +6,20 @@ const Houtwerk = () => {
     {
       title: "Pasgemaakte Kombuiskaste",
       description: "Luukse kombuiskaste volgens u spesifikasies en styl voorkeure.",
-      features: ["Hoë kwaliteit materiale", "Moderne ontwerpe", "Duursame afwerking"]
+      features: ["Hoë kwaliteit materiale", "Moderne ontwerpe", "Duursame afwerking"],
+      image: "/kombuis1.webp"
     },
     {
       title: "Kombuiseilande",
       description: "Funksionele en stylvolle kombuiseilande wat ekstra werkspasie en stoorplek bied.",
-      features: ["Geïntegreerde berging", "Unieke ontwerpe", "Praktiese werkspasie"]
+      features: ["Geïntegreerde berging", "Unieke ontwerpe", "Praktiese werkspasie"],
+      image: "/kombuis2.webp"
     },
     {
       title: "Ingeboude Toerusting",
       description: "Pasgemaakte oplossings vir ingeboude kombuistoerusting.",
-      features: ["Naatlose integrasie", "Maksimum spasiebenutting", "Professionele installasie"]
+      features: ["Naatlose integrasie", "Maksimum spasiebenutting", "Professionele installasie"],
+      image: "/kombuis3.webp"
     }
   ];
 
@@ -41,6 +44,13 @@ const Houtwerk = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {kitchenServices.map((service, index) => (
             <Card key={index} className="hover:shadow-lg transition-shadow border-voortrek-brown/20">
+              <div className="relative h-48 overflow-hidden rounded-t-lg">
+                <img 
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <CardHeader className="bg-voortrek-navy/5">
                 <CardTitle className="text-voortrek-navy">{service.title}</CardTitle>
                 <CardDescription>{service.description}</CardDescription>
