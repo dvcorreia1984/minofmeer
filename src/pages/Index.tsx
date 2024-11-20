@@ -14,18 +14,18 @@ const Index = () => {
               alt="Voortrek Logo" 
               className="w-32 h-32 md:w-36 md:h-36 object-contain"
             />
-            <div>
-              <h1 className="text-4xl md:text-5xl font-bold text-center md:text-left">Voortrek Houtwerk</h1>
-              <div className="mt-2 text-gray-700 flex flex-col md:flex-row md:items-center gap-4 md:gap-6">
-                <div className="flex items-center gap-2">
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
+              <div className="mt-2 text-gray-700 flex flex-col md:flex-row md:items-center gap-4 md:gap-6 text-sm">
+                <div className="flex items-center gap-2 justify-center">
                   <MapPin className="h-4 w-4 flex-shrink-0" />
                   <span>N34 Sandsteen Straat, Orania, 8752</span>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 justify-center">
                   <Phone className="h-4 w-4 flex-shrink-0" />
                   <span>+27 (0) 84 251 3952</span>
                 </div>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 justify-center">
                   <Mail className="h-4 w-4 flex-shrink-0" />
                   <span>yolande@voortrek.co.za</span>
                 </div>
