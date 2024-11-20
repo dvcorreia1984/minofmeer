@@ -26,7 +26,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center justify-center md:justify-start gap-2">
                   <Phone className="h-4 w-4 flex-shrink-0" />
-                  <span>084-251-3951</span>
+                  <span>084-251-3952</span>
                 </div>
                 <div className="flex items-center justify-center md:justify-start gap-2">
                   <Mail className="h-4 w-4 flex-shrink-0" />
