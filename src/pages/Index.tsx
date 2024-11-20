@@ -9,7 +9,7 @@ const Index = () => {
         <div className="flex flex-col items-center justify-center gap-4 mb-12">
           <div className="flex items-center justify-center gap-6 bg-[url('/wood-texture-light.jpg')] bg-cover p-8 rounded-lg">
             <img 
-              src="/voortreklogo.jpg" 
+              src="/voortreklogo.png" 
               alt="Voortrek Logo" 
               className="w-32 h-32 md:w-36 md:h-36 object-contain"
             />
