@@ -9,7 +9,7 @@ const PreOrderBanner = () => {
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="text-center sm:text-left">
           <h3 className="text-lg font-semibold">Bestel nou jou modulêre huis</h3>
-          <p className="text-sm text-white/90">Betaal slegs 'n R10,000 deposito om jou eenheid te verseker</p>
+          <p className="text-sm text-white/90">Bestel nou deur 'n deposito van R50 000 neer te sit om jou eenheid te verseker.</p>
         </div>
         <Button 
           onClick={() => navigate("/moduler")}
