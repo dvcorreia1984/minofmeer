@@ -7,7 +7,7 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <div className="section-container py-24">
         <div className="flex flex-col items-center justify-center gap-4 mb-12">
-          <div className="flex items-center justify-center gap-6 bg-[url('/wood-texture-light.jpg')] bg-cover p-8 rounded-lg">
+          <div className="flex items-center justify-center gap-6 bg-[url('/wood-texture-light.webp')] bg-cover p-8 rounded-lg">
             <img 
               src="/voortreklogo.png" 
               alt="Voortrek Logo" 
