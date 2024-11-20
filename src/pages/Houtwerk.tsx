@@ -24,7 +24,7 @@ const Houtwerk = () => {
       <div className="section-container py-24">
         <div className="flex flex-col items-center mb-12">
           <img 
-            src="/lovable-uploads/8d137267-4b2a-4604-9c0f-e14d22c7097e.png"
+            src="/voortreklogo.png"
             alt="Voortrek Houtwerk Logo"
             className="w-32 h-32 mb-6"
           />
