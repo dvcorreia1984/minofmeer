@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Index = () => {
   return (
@@ -15,9 +16,20 @@ const Index = () => {
             />
             <div>
               <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
-              <p className="text-gray-600 italic mt-2">
-                Kwaliteit houtwerk en modulêre behuising oplossings
-              </p>
+              <div className="mt-2 text-gray-700 space-y-1">
+                <div className="flex items-center gap-2">
+                  <MapPin className="h-4 w-4" />
+                  <span>Orania, Suid-Africa</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone className="h-4 w-4" />
+                  <span>+27 (0) 84 251 3952</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="h-4 w-4" />
+                  <span>yolande@voortrek.co.za</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
