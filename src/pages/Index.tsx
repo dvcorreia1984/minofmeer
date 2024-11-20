@@ -66,7 +66,7 @@ const Index = () => {
             </CardHeader>
             <CardContent className="flex flex-col items-center">
               <img 
-                src="/huis1.webp" 
+                src="/moduler1.webp" 
                 alt="Modulêre Behuising" 
                 className="w-full h-48 object-cover rounded-md mb-6"
               />
