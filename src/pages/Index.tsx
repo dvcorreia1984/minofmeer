@@ -12,7 +12,7 @@ const Index = () => {
             alt="Voortrek Logo" 
             className="w-16 h-16 object-contain"
           />
-          <h1 className="text-4xl font-bold">Voortrek</h1>
+          <h1 className="text-4xl font-bold">Voortrek Houtwerk</h1>
         </div>
         <p className="text-center text-gray-600 mb-16">
           Kwaliteit houtwerk en modulêre behuising oplossings
