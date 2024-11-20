@@ -16,19 +16,19 @@ const Index = () => {
             />
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
-              <div className="mt-2 text-gray-700 flex flex-col md:flex-row md:items-center gap-4 md:gap-6 text-sm">
-                <div className="flex flex-col items-center gap-1">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 flex-shrink-0" />
+              <div className="mt-2 text-gray-700 flex flex-col md:flex-row md:items-start gap-4 md:gap-6 text-sm">
+                <div className="flex items-center gap-2">
+                  <MapPin className="h-4 w-4 flex-shrink-0" />
+                  <div className="flex flex-col items-start">
                     <span>N34 Sandsteen Straat,</span>
+                    <span>Orania, 8752</span>
                   </div>
-                  <span>Orania, 8752</span>
                 </div>
-                <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4 flex-shrink-0" />
                   <span>084-251-3951</span>
                 </div>
-                <div className="flex items-center gap-2 justify-center">
+                <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4 flex-shrink-0" />
                   <span>yolande@voortrek.co.za</span>
                 </div>
