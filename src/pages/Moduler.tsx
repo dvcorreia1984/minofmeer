@@ -22,7 +22,7 @@ const Moduler = () => {
             />
             <h3 className="text-xl font-semibold mb-2">Standaard Modulêr</h3>
             <p className="text-gray-600 mb-4">
-              Ons basiese modulêre eenheid, perfek vir jonk getroudes of kantoorspasie.
+              Ons basiese modulêre eenheid, perfek vir begin-woning of kantoorspasie.
             </p>
             <Link to="/contact">
               <Button className="w-full">Kontak Ons</Button>
