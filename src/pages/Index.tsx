@@ -48,8 +48,8 @@ const Index = () => {
               className="w-full h-full"
               autoPlay 
               loop 
-              muted 
               playsInline
+              controls
             >
               <source src="/video.webm" type="video/webm" />
               Your browser does not support the video tag.
