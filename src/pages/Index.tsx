@@ -6,40 +6,37 @@ import { Mail, Phone, MapPin } from "lucide-react";
 const Index = () => {
   return (
     <div className="min-h-screen bg-white">
-      <div className="w-screen bg-[url('/wood-texture-light.webp')] bg-cover">
-        <div className="section-container py-12">
-          <div className="flex flex-col items-center justify-center gap-4">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6 p-8 rounded-lg">
-              <img 
-                src="/voortreklogo.png" 
-                alt="Voortrek Logo" 
-                className="w-32 h-32 md:w-36 md:h-36 object-contain"
-              />
-              <div className="text-center md:text-left">
-                <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
-                <div className="mt-2 text-gray-700 flex flex-col md:flex-row md:items-start gap-4 md:gap-6 text-sm">
-                  <div className="flex items-center justify-center md:justify-start gap-2">
-                    <MapPin className="h-4 w-4 flex-shrink-0" />
-                    <div className="flex flex-col items-center md:items-start">
-                      <span>N34 Sandsteen Straat,</span>
-                      <span>Orania, 8752</span>
-                    </div>
+      <div className="section-container py-24">
+        <div className="flex flex-col items-center justify-center gap-4 mb-12">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-6 bg-[url('/wood-texture-light.webp')] bg-cover p-8 rounded-lg">
+            <img 
+              src="/voortreklogo.png" 
+              alt="Voortrek Logo" 
+              className="w-32 h-32 md:w-36 md:h-36 object-contain"
+            />
+            <div className="text-center">
+              <h1 className="text-4xl md:text-5xl font-bold">Voortrek Houtwerk</h1>
+              <div className="mt-2 text-gray-700 flex flex-col md:flex-row md:items-start gap-4 md:gap-6 text-sm">
+                <div className="flex items-center gap-2">
+                  <MapPin className="h-4 w-4 flex-shrink-0" />
+                  <div className="flex flex-col items-start">
+                    <span>N34 Sandsteen Straat,</span>
+                    <span>Orania, 8752</span>
                   </div>
-                  <div className="flex items-center justify-center md:justify-start gap-2">
-                    <Phone className="h-4 w-4 flex-shrink-0" />
-                    <span>084-251-3951</span>
-                  </div>
-                  <div className="flex items-center justify-center md:justify-start gap-2">
-                    <Mail className="h-4 w-4 flex-shrink-0" />
-                    <span>yolande@voortrek.co.za</span>
-                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Phone className="h-4 w-4 flex-shrink-0" />
+                  <span>084-251-3951</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Mail className="h-4 w-4 flex-shrink-0" />
+                  <span>yolande@voortrek.co.za</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
+        
         <p className="max-w-3xl mx-auto mb-16 text-lg leading-relaxed text-gray-700 border-l-4 border-primary pl-6">
           Ons spesialiseer in die vervaardiging van hoë-gehalte houtwerk en modulêre behuising oplossings. Met ons ervaring en vakmanskap verseker ons dat elke projek aan die hoogste standaarde voldoen.
         </p>
@@ -87,6 +84,7 @@ const Index = () => {
             </CardContent>
           </Card>
         </div>
+      </div>
     </div>
   );
 };
