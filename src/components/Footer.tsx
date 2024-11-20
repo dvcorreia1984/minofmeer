@@ -82,4 +82,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;git 
+export default Footer;
