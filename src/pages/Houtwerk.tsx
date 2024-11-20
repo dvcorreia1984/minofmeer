@@ -88,7 +88,7 @@ const Houtwerk = () => {
                 <span className="text-voortrek-orange">•</span> Tel: 084-251-3952
               </p>
               <p className="flex items-center gap-2">
-                <span className="text-voortrek-orange">•</span> E-pos: info@voortrek.co.za
+                <span className="text-voortrek-orange">•</span> E-pos: yolande@voortrek.co.za
               </p>
             </div>
           </div>
