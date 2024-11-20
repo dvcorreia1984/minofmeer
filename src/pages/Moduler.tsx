@@ -31,7 +31,7 @@ const Moduler = () => {
 
           <Card className="p-6">
             <img 
-              src="/huis2.webp" 
+              src="/moduler2.webp" 
               alt="Modulêre Huis 2" 
               className="w-full h-48 object-cover rounded-md mb-4"
             />
