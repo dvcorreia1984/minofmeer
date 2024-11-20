@@ -1,11 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
+import BackButton from "@/components/BackButton";
 
 const Moduler = () => {
   return (
     <div className="min-h-screen bg-white">
       <div className="section-container py-24">
+        <BackButton />
         <h1 className="text-4xl font-bold mb-8">Modulêre Behuising</h1>
         <p className="text-gray-600 mb-12">
           Bekostigbaar en selfstandige woon of werk oplossings

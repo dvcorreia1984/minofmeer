@@ -1,4 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import BackButton from "@/components/BackButton";
 
 const Houtwerk = () => {
   const kitchenServices = [
@@ -22,6 +23,7 @@ const Houtwerk = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-voortrek-brown/10">
       <div className="section-container py-24">
+        <BackButton />
         <div className="flex flex-col items-center mb-12">
           <img 
             src="/voortreklogo.png"

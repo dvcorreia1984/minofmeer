@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import BackButton from "@/components/BackButton";
 
 const Advantages = () => {
   const benefits = [
@@ -24,6 +25,7 @@ const Advantages = () => {
   return (
     <div className="min-h-screen bg-white">
       <div className="section-container py-24">
+        <BackButton />
         <h1 className="text-4xl font-bold text-center mb-12">Advantages of Modular Living</h1>
         
         <div className="grid md:grid-cols-2 gap-8 mb-16">

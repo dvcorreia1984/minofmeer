@@ -1,4 +1,5 @@
 import { useState } from "react";
+import BackButton from "@/components/BackButton";
 import {
   Accordion,
   AccordionContent,
@@ -50,6 +51,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-white">
       <div className="section-container py-24">
+        <BackButton />
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
