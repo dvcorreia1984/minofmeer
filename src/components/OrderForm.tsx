@@ -6,6 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { useToast } from "@/components/ui/use-toast";
 import { useNavigate } from "react-router-dom";
 import { Checkbox } from "@/components/ui/checkbox";
+import { X } from "lucide-react";
 
 const OrderForm = () => {
   const [formData, setFormData] = useState({
@@ -59,7 +60,14 @@ const OrderForm = () => {
   return (
     <div className="min-h-screen bg-white py-24">
       <div className="section-container">
-        <div className="max-w-md mx-auto">
+        <div className="max-w-md mx-auto relative">
+          <button
+            onClick={() => navigate(-1)}
+            className="absolute right-0 top-0 p-2 hover:bg-gray-100 rounded-full transition-colors"
+            aria-label="Close"
+          >
+            <X className="h-6 w-6" />
+          </button>
           <h1 className="text-3xl font-bold mb-8">Bestel jou modulêre eenheid</h1>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
