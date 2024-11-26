@@ -32,7 +32,7 @@ const Contact = () => {
 
   const faqs = [
     {
-      question: "Hoe lank neem dit om 'n MinOfMeer huis op te rig?",
+      question: "Hoe lank neem dit om 'n VoortrekModuler huis op te rig?",
       answer: "Tipies neem die hele proses vanaf bestelling tot intrek 8-12 weke. Dit sluit vervaardiging, vervoer en op-terrein montering in."
     },
     {

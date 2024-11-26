@@ -87,21 +87,22 @@ const Houtwerk = () => {
               </li>
             </ul>
           </div>
-          <div className="p-6 rounded-lg bg-voortrek-navy text-white">
-            <h2 className="text-2xl font-semibold mb-4">Kontak Ons</h2>
-            <p className="mb-6">
-              Skakel ons vandag nog vir 'n gratis konsultasie en kwotasie. 
-              Ons span is gereed om u droomkombuis 'n realiteit te maak.
-            </p>
-            <div className="space-y-2">
-              <p className="flex items-center gap-2">
-                <span className="text-voortrek-orange">•</span> Tel: 084-251-3952
-              </p>
-              <p className="flex items-center gap-2">
-                <span className="text-voortrek-orange">•</span> E-pos: yolande@voortrek.co.za
-              </p>
-            </div>
-          </div>
+
+          <a href="https://www.facebook.com/voortrekhoutwerk" target="_blank" rel="noopener noreferrer">
+            <Card className="hover:shadow-lg transition-shadow bg-blue-50 border-blue-200 h-full flex items-center justify-center">
+              <CardHeader className="flex flex-col items-center justify-center text-center">
+                <CardTitle className="text-blue-600 flex items-center justify-center gap-2">
+                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  </svg>
+                  Volg ons op Facebook
+                </CardTitle>
+                <CardDescription className="text-center">
+                  Sien meer projek foto's en opdaterings op ons Facebook-blad
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </a>
         </div>
       </div>
     </div>
